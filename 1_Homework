@@ -1,0 +1,5 @@
+boxes = 2
+eggs_in_box = 6 * boxes
+eggs_for_omellete = 4
+omelettes = eggs_in_box / eggs_for_omellete
+print("You can make {} omelettes with {} boxes of eggs".format(omelettes, boxes))
