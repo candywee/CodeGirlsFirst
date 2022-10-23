@@ -1,0 +1,29 @@
+import random
+
+bet = int(input("How much money would you like to bet? "))
+chosen_colour = input("What colour do you choose? red/black ")
+chosen_number = int(input("Choose a number between 1 and 100 "))
+
+def colour():
+    random_number = random.randint(1, 2)
+    if random_number == 1:
+        colour = 'red'
+    else:
+        colour = 'black'
+    return colour
+
+
+random_number = random.randint(1, 100)
+random_colour = colour()
+
+if random_number == chosen_number and random_colour == chosen_colour:
+    bet*=100
+elif random_number == chosen_number or random_colour == chosen_colour:
+    bet
+else:
+    bet -=bet
+    
+
+print(random_number, random_colour)
+
+print(f"You win {bet}")
