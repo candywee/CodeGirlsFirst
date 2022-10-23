@@ -1,0 +1,11 @@
+game_scores = [23, 85, 95, 10, 45, 63, 12, 2, 74, 32, 9, 14]
+how_many = len(game_scores)
+highest = max(game_scores)
+lowest = min(game_scores)
+in_order = sorted(game_scores)
+rever = list(reversed(in_order))
+
+print(f"Number of scores: {how_many}")
+print(f"Highest score: {highest}")
+print(f"Lowest score: {lowest}")
+print(rever)
